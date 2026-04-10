@@ -1,0 +1,30 @@
+
+> Configure project :app
+w: file:///K:/MyApplication210/app/build.gradle.kts:7:1: 'fun Project.android(configure: Action<BaseAppModuleExtension>): Unit' is deprecated. Replaced by com.android.build.api.dsl.ApplicationExtension.
+This class is not used for the public extensions in AGP when android.newDsl=true, which is the default in AGP 9.0, and will be removed in AGP 10.0.
+e: file:///K:/MyApplication210/app/build.gradle.kts:56:10: Argument type mismatch: actual type is 'Provider<MinimalExternalModuleDependency>', but 'Action<KaptExtension>' was expected.
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file 'K:\MyApplication210\app\build.gradle.kts' line: 7
+
+* What went wrong:
+Script compilation errors:
+
+  Line 07: android {
+           ^ 'fun Project.android(configure: Action<BaseAppModuleExtension>): Unit' is deprecated. Replaced by com.android.build.api.dsl.ApplicationExtension.
+               This class is not used for the public extensions in AGP when android.newDsl=true, which is the default in AGP 9.0, and will be removed in AGP 10.0.
+
+  Line 56:     kapt(libs.androidx.room.compiler)
+                    ^ Argument type mismatch: actual type is 'Provider<MinimalExternalModuleDependency>', but 'Action<KaptExtension>' was expected.
+
+2 errors
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 3s

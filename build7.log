@@ -1,0 +1,36 @@
+
+> Configure project :app
+e: file:///K:/MyApplication210/app/build.gradle.kts:40:38: Unresolved reference 'minus' for operator '-'.
+e: file:///K:/MyApplication210/app/build.gradle.kts:40:39: Unresolved reference 'ktx'.
+e: file:///K:/MyApplication210/app/build.gradle.kts:41:51: Unresolved reference 'minus' for operator '-'.
+e: file:///K:/MyApplication210/app/build.gradle.kts:41:52: Unresolved reference 'ktx'.
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file 'K:\MyApplication210\app\build.gradle.kts' line: 40
+
+* What went wrong:
+Script compilation errors:
+
+  Line 40:     implementation(libs.androidx.core-ktx)
+                                                ^ Unresolved reference 'minus' for operator '-'.
+
+  Line 40:     implementation(libs.androidx.core-ktx)
+                                                 ^ Unresolved reference 'ktx'.
+
+  Line 41:     implementation(libs.androidx.lifecycle.runtime-ktx)
+                                                             ^ Unresolved reference 'minus' for operator '-'.
+
+  Line 41:     implementation(libs.androidx.lifecycle.runtime-ktx)
+                                                              ^ Unresolved reference 'ktx'.
+
+4 errors
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 7s
